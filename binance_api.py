@@ -125,12 +125,7 @@ class Binance:
         """
         
         
-        try:
-            self.client.futures_leverage_bracket( # Setting the leverage to 1
-                symbol=symbol,
-                leverage=1,
-                )
-            
+        try:            
             # Market Order
             order = self.client.futures_create_order(
                 symbol=symbol,
